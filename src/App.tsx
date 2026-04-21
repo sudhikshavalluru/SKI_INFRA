@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/SKI_INFRA">
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <Navbar />
       <Routes>
