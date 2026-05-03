@@ -29,9 +29,10 @@ export default function Contact() {
                   <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 shrink-0"><Phone size={28} /></div>
                   <div>
                     <h4 className="text-xl font-bold text-gray-900 mb-1">Phone</h4>
+                    <p className="text-gray-600">+91 80087 16762</p>
+                    <p className="text-gray-600">+91 73866 96715</p>
                     <p className="text-gray-600">+91 94906 68611</p>
-                    <p className="text-gray-600">+91 93905 29449 (Emergency)</p>
-                    <p className="text-gray-600">+91 70365 14530 (Emergency)</p>
+                    <p className="text-gray-600">+91 93905 29449</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-6">

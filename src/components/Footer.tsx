@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import logoBW from '../assets/images/logo(b&w).png';
 
 export default function Footer() {
   return (
@@ -8,9 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="px-2 py-1 bg-white border-2 border-blue-600 rounded flex items-center justify-center shadow-sm">
-                <span className="text-blue-600 font-black text-lg tracking-tighter">SKI</span>
-              </div>
+              <img src={logoBW} alt="SKI Logo" className="h-20 w-auto object-contain" />
               <span className="text-xl font-bold tracking-tight text-white">Sri Karthikeya Infra</span>
             </Link>
             <p className="text-gray-400 leading-relaxed">Leading the way in lift and elevator solutions. SKI provides safe, reliable, and innovative lift services for residential and commercial buildings.</p>
@@ -42,7 +41,10 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3"><MapPin className="text-blue-500 shrink-0 mt-1" size={18} /><span>16-334, South Street, Venkatagiri, 524132, Tirupati district</span></li>
+              <li className="flex items-center space-x-3"><Phone className="text-blue-500 shrink-0" size={18} /><span>+91 80087 16762</span></li>
+              <li className="flex items-center space-x-3"><Phone className="text-blue-500 shrink-0" size={18} /><span>+91 73866 96715</span></li>
               <li className="flex items-center space-x-3"><Phone className="text-blue-500 shrink-0" size={18} /><span>+91 94906 68611</span></li>
+              <li className="flex items-center space-x-3"><Phone className="text-blue-500 shrink-0" size={18} /><span>+91 93905 29449</span></li>
               <li className="flex items-center space-x-3"><Mail className="text-blue-500 shrink-0" size={18} /><span>srikarthikeyainfra55@gmail.com</span></li>
             </ul>
           </div>

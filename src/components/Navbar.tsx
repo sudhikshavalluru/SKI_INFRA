@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logoBW from '../assets/images/logo(b&w).png';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -26,10 +27,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="px-2 py-1 bg-white border-2 border-blue-600 rounded flex items-center justify-center shadow-sm">
-              <span className="text-blue-600 font-black text-xl tracking-tighter">SKI</span>
-            </div>
-            <span className="text-xl font-bold tracking-tight text-gray-900">Sri Karthikeya Infra</span>
+            <img src={logoBW} alt="SKI Logo" className="h-16 w-auto object-contain" />
+            <span className="text-2xl font-bold tracking-tight text-gray-900">Sri Karthikeya Infra</span>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
